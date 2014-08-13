@@ -41,6 +41,7 @@ void loop() {
   redLEDValue   = map(redPotValue, 0, 1023, 0, 255);
   blueLEDValue  = map(bluePotValue, 0, 1023, 0, 255);
   
+  /*
   // DEBUG: We communitate the values  
   Serial.print("Green:");
   Serial.print(greenLEDValue);
@@ -49,15 +50,11 @@ void loop() {
   Serial.print("\t\tBlue:");
   Serial.println(blueLEDValue);
   delay (15);
+  */
   
   // We write the value to the pin 
-  /*
   analogWrite(redLEDPin, redLEDValue);
   analogWrite(greenLEDPin, greenLEDValue);
   analogWrite(blueLEDPin, blueLEDValue);
   delay(15);
-  */
-  analogWrite(9, 250);
-  analogWrite(10, 250);
-  analogWrite(11, 250);
 }
